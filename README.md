@@ -47,3 +47,8 @@ Build a game with the following workflow:
 5. Update your function that renders the ballons to add also an onClick on each balloon div to listen to the click.
 
 6. When a balloon is clicked, go the array of colors and turn the color back to null.
+
+## Technologies
+1. HTML
+2. CSS
+3. JS
