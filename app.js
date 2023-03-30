@@ -18,7 +18,7 @@ const render = () => {
     const ballons = ballonsMap.map((color, position) => {
         return color !== null
         ? `<div class="balloon active" style="background: ${color}" data-position="${position}"></div>`
-        : `<div class="balloon popped" style="background: ${color}" data-position="${position}"></div>` 
+        : `<div class="balloon popped"></div>` 
     });
 
     let activeBalloons = ballonsMap.filter(b => b !== null).length; 
@@ -40,7 +40,7 @@ function addEventToBaloons(){
     for(let i = 0; i < elements.length; i++){
         elements[i].addEventListener('click', e => {
             popBalloon(e.target.dataset.position);
-            console.log(e.target.dataset.position)
+            // console.log(e.target.dataset.position)
         })
     }
 }
